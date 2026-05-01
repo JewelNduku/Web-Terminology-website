@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web 4.0</title>
-     <style>
+  <style>
         body {
             background-color:rgb(239, 146, 203);
             margin: 0;  
+            padding-top: 140px; 
         }
         .banner {
             background-color: rgb(87, 0, 128);
             color: white;
             text-align: center;
-            padding: 20px;
             font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1001;
+            padding: 25px;
       }
          .toplink {
     overflow: auto;
     background-color: rgb(239, 146, 203);
+    top: 60px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    text-align: center;
         }
         .toplink a{
             color: white;
-            float: left;
-            display: block;
+            
+            display: inline-block;
             text-decoration: none;
             text-align: left;
             padding: 14px 16px;
@@ -39,7 +49,9 @@
             text-transform: uppercase;
             font-style: italic;
             text-align: center;
-            color: rgb(87, 0, 128)
+            color: rgb(239, 146, 203);
+            text-decoration: underline;
+           
         }
         h2{
             text-decoration: underline;
@@ -70,13 +82,14 @@
             width: 20%;
         }
         .main_content{
-            background-color: white;
-            color:  rgb(87, 0, 128);
+            background-color: rgb(87, 0, 128);
+            color:  white;
             text-align: center;
             padding: 20px;
             margin-left: 20%;
             margin-right: 20%;
             clear: both;
+            margin-top: 120px; /* Adjust this value based on the height of your banner and toplink */
         }
     </style>
 </head>
@@ -105,10 +118,12 @@
         <a href="web4.html">Web 4.0</a>
     </div>
      
-     <div class="content">
+     <div class="main_content">
     <h1>Web 4.0</h1>
  
     <p>Web 4.0 refers to the fourth generation of the World Wide Web, characterized by artificial intelligence and machine learning technologies. Examples: Smart assistants, personalized content recommendation systems Functions: Enhances user experience through intelligent automation and data-driven insights </p>
+    <p>Advantages: Improved user experience, enhanced personalization, increased efficiency  </p>
+    <p>Disadvantages: Privacy concerns, potential for bias in AI algorithms, increased reliance on technology</p>
     <img src="images/web4.img.jpeg" alt="Web 4.0 diagram" width = "300" height = "400" float = "center">
     <p>Example: Web 4.0 applications may use AI to provide personalized recommendations based on user behavior and preferences.</p>                 
     </div>
